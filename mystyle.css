@@ -1,5 +1,17 @@
-body{
-    text-align: center;
-    background-color: aquamarine;
-    background-size: cover;
+body {
+  background-color: aquamarine;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+}
+
+#image-el{
+    border-radius: 20px;
+}
+
+#img-select-container{
+    display: flex;
+    gap: 45px;
 }
