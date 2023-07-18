@@ -12,6 +12,7 @@ h1 {
 }
 
 #img-select-container{
-    display: flex;
-    gap: 45px;
+    display: flex 1 ;
+    gap: 60px;
 }
+
