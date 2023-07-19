@@ -1,36 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My library</title>
-        <link rel="stylesheet" href="mystyle.css">
-    </head>
-    <body>
-        <main>
-            <h1>My Library BookList</h1>
-            <div id="img-select-container">
-                <img
-                    id="image-el"
-                    width="70px"
-                    height="70px"
-                    src="https://media.istockphoto.com/id/1475104845/photo/brand-concept-books-of-advertising-and-branding.jpg?s=612x612&w=0&k=20&c=c3RxvVNtzYjgQpeGaGztIACioPMfGqJ5kKRtdykqzU4="
-                    alt=""
-                >
-                <form action="">
-                    <label for="title"></label>
-                    <input type="text" name="title" id="title">
-                    <label for="author"></label>
-                    <input type="text" name="author" id="author">
-                    <label for="category"></label>
-                    <select name="category" id="category">
-                        <option value="fantasy">Fantasy</option>
-                        <option value="sci-fi">Sci-Fi</option>
-                        <option value="romans">Romans</option>
-                    </select>
-                    <button type="submit" id="submit">complete</button>
-                </form>
-                <script src="myscript.js"></script>
-            </main>
-        </body>
-    </html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <h1>MY LIBRARY BOOKLIST</h1>
+  <button class="open-button" onclick="openForm()">Open Form To Add a New Book</button>
+ 
+  <div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>ADD BOOKS</h1>
+
+    <label for="email"><b>TITLE</b></label>
+    <input type="text" placeholder="Enter book title" name="book" required>
+
+    <label for="psw"><b>author</b></label>
+    <input type="password" placeholder="Enter author name" 
+    name="psw" required>
+
+    <label for="email"><b>Pages</b></label>
+    <input type="text" placeholder="Enter book pages" name="book" 
+     required>
+    
+    
+    
+    
+    <button type="submit" class="btn" >submit</button>
+   
+    
+    <button type="button" class="btn cancel" 
+      onclick="closeForm()">Close</button>
+  </form>
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="script.js"></script>
+
+  
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html></html>
