@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Online Library</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <h1>My Library Book list</h1>
- 
- 
-    <p id="p-el"></p>  
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>My Library Book list</h1>
+    <div class="btn-container">
+      <button class="add-book-btn">+ Add Book</button>
+    </div>
+    
+    <div class="modal-overlay">
+      <form id="form" class="modal">
+        <h2>Add new book</h2>
+        <input id="title" type="text" placeholder="Title" required />
+        <input id="author" type="text" placeholder="Author" required />
+        <input id="pages" type="number" placeholder="Pages" required />
+        <div class="check-container">
+            <label>Have you read it?</label>
+            <input id="isRead" class="checkbox" type="checkbox">
+            </div>
+        <input class="submit" type="submit" />
+      </form>
+    </div>
    
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   <script src="JavaScript.js"></script> 
-</body>
+    <script src="JavaScript.js"></script>
+  </body>
 </html>
