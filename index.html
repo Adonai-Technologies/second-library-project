@@ -10,22 +10,37 @@
     <h1>My Library Book list</h1>
     <p id="p-el"></p>
     
+    
+    <div id="container">
+     <p id="newBook1"></p>
+
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
     <div class="form-popup" id="myForm">
     
       <form action="/action_page.php" class="form-container">
       
+        
+      <div id="bookInput-el">
     <label for="Book-title"><b>Book:</b></label>
-    <input type="text" placeholder="Enter title" name="title" required>
+    <input type="text"  placeholder="Enter Book title" name="title"  required>
 
-    <label for="author"><b>author:</b></label>
-    <input type="text" placeholder="Enter author" name="author" required>
+    <label for="author"><b>Author:</b></label>
+    <input type="text" placeholder="Enter author name" name="author" required>
 
-    <label for="pages"><b>pages:</b></label>
-    <input type="text" placeholder="Enter pages" name="pages" required>
-
+    <label for="pages"><b>Pages:</b></label>
+    <input type="text"  placeholder="Enter number of pages" name="pages" required>
+     </div>
    
    
-    <button type="submit" class="btn">submit:</button>
+    <button type="submit" class="btn" onclick="addBookToLibrary()">submit:</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
     </form>
   </div>
