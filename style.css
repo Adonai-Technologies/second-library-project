@@ -1,0 +1,71 @@
+h1 {
+  text-align: center;
+}
+
+P {
+  text-align: center;
+}
+
+body {
+  background-color: aquamarine;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+#addnewbook-btn {
+  background-color: #4e0505;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  padding: auto;
+}
+
+.form-container input[type="text"],
+.form-container input[type="text"] .form-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 15px;
+  padding-right: 5px;
+}
+
+.form-container .btn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  padding-right: 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
