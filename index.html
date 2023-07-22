@@ -7,44 +7,42 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <header>
+      <img  id="logo-img" width="50px" height="50px"
+        src="https://plus.unsplash.com/premium_photo-1677567996070-68fa4181775a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGlicmFyeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt="shout out to https://unsplash.com/">
+    <span>M-L-BL</span>
+      </header>
+
     <h1>My Library Book list</h1>
+    
     <p id="p-el"></p>
-    
-    
-    <div id="container">
-     <p id="newBook1"></p>
 
+    <ul id="ul-el"></ul>
 
-    </div>
-    
-    
-    
-    
-    
-    
-    
     <div class="form-popup" id="myForm">
-    
+
       <form action="/action_page.php" class="form-container">
-      
-        
-      <div id="bookInput-el">
-    <label for="Book-title"><b>Book:</b></label>
-    <input type="text"  placeholder="Enter Book title" name="title"  required>
 
-    <label for="author"><b>Author:</b></label>
-    <input type="text" placeholder="Enter author name" name="author" required>
+        <div id="bookInput-el">
+          <label for="Book-title"><b>Book:</b></label>
+          <input type="text" placeholder="Enter Book title" name="title"
+            required>
 
-    <label for="pages"><b>Pages:</b></label>
-    <input type="text"  placeholder="Enter number of pages" name="pages" required>
-     </div>
-   
-   
-    <button type="submit" class="btn" onclick="addBookToLibrary()">submit:</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-    </form>
-  </div>
-   
+          <label for="author"><b>Author:</b></label>
+          <input type="text" placeholder="Enter author name" name="author"
+            required>
+
+          <label for="pages"><b>Pages:</b></label>
+          <input type="text" placeholder="Enter number of pages" name="pages"
+            required>
+        </div>
+
+        <button type="submit" class="btn" onclick="addBookToLibrary()">submit:</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+
     <button id="addnewbook-btn" onclick="openForm()">ADD NEW Book +</button>
     <script src="JavaScript.js"></script>
   </body>

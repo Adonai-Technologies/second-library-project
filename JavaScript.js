@@ -1,9 +1,9 @@
 let pEl = document.getElementById("p-el")
 let bookInputEl = document.getElementById("bookInput-el")
 let newBook1 = document.getElementById("newBook1")
+const ulEl = document.getElementById("ul-el")
 
-
-let myLibrary = ["The Hobbit", "The runAway Bride", "Beauty and the Beast"];
+let myLibrary = [];
 
 function Book(title, author, pages) {
     this.title = title;
@@ -16,24 +16,39 @@ function Book(title, author, pages) {
 }
 
 
+let libraryFromLocalStorage = JSON.parse( localStorage.getItem("myLibrary") )
+
+if(libraryFromLocalStorage){
+ myLibrary= libraryFromLocalStorage
+ displayBook()
+}
+
+
+
+
+
 
 
 function addBookToLibrary() {
     myLibrary.push[bookInputEl.value]
-    pEl.innerHTML = bookInputEl.value = "";
+    bookInputEl.value = ""
+    localStorage.setItem("myLibrary")
+    displayBook()
+    console.log( localStorage.getItem("myLibrary", JSON.stringify(myLeads)))
 
 }
-addBookToLibrary()
+
 
 
 
 function displayBook() {
+    let libraryItems = ""
     for (let i = 0; i < myLibrary.length; i++) {
-        let myNewBook1 = new Book(myLibrary[i], "Jony Jones", 123)
-        console.log(myNewBook1.info())
-        newBook1.innerText = myNewBook1.info()
+        libraryItems += `<li>
+     <a target='_blank' href=' ${myLibrary[i]} '> ${myLibrary[i]}</a>
+     </li>`
     }
-
+    ulEl.innerHTML = libraryItems
 }
 
 
