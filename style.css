@@ -1,5 +1,6 @@
 h1 {
   text-align: center;
+  color: aliceblue;
 }
 
 P {
@@ -71,4 +72,8 @@ body {
 .form-container .btn:hover,
 .open-button:hover {
   opacity: 1;
+}
+
+#logo-img{
+border-radius: 10px;
 }
