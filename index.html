@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Online Library</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1>My Library Book list</h1>
-    <div class="btn-container">
-      <button class="add-book-btn">+ Add Book</button>
-    </div>
+    <p id="p-el"></p>
     
-    <div class="modal-overlay">
-      <form id="form" class="modal">
-        <h2>Add new book</h2>
-        <input id="title" type="text" placeholder="Title" required />
-        <input id="author" type="text" placeholder="Author" required />
-        <input id="pages" type="number" placeholder="Pages" required />
-        <div class="check-container">
-            <label>Have you read it?</label>
-            <input id="isRead" class="checkbox" type="checkbox">
-            </div>
-        <input class="submit" type="submit" />
-      </form>
-    </div>
+    <div class="form-popup" id="myForm">
+    
+      <form action="/action_page.php" class="form-container">
+      
+    <label for="Book-title"><b>Book:</b></label>
+    <input type="text" placeholder="Enter title" name="title" required>
+
+    <label for="author"><b>author:</b></label>
+    <input type="text" placeholder="Enter author" name="author" required>
+
+    <label for="pages"><b>pages:</b></label>
+    <input type="text" placeholder="Enter pages" name="pages" required>
+
    
    
+    <button type="submit" class="btn">submit:</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+   
+    <button id="addnewbook-btn" onclick="openForm()">ADD NEW Book +</button>
     <script src="JavaScript.js"></script>
   </body>
 </html>

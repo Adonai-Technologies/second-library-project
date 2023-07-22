@@ -1,31 +1,45 @@
-
-const title = document.querySelector('#title').value;
-const author = document.querySelector('#author').value;
-const pages = document.querySelector('#pages').value;
-const isRead = document.querySelector('#isRead').value;
-const form = document.querySelector('#form');
-form.addEventListener('submit', addBookToLibrary);
+let pEl = document.getElementById("p-el")
 
 
-const addBookBtn = document.querySelector('.add-book-btn');
-const modalOverlay = document.querySelector('.modal-overlay');
-addBookBtn.addEventListener('click', function() {
-  modalOverlay.classList.add('overlay-active');
-});
+let myLibrary = ["The Hobbit", "The runAway Bride", "Beauty and the Beast"];
 
-
-let myLibrary = [];
-
-function Book(title,author,pages){
-this.title = title;
-this.author = author;
-this.pages = pages;
-
+function Book(title, author, pages) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.isRead = " not read yet. "
+    this.info = function () {
+        return `${this.title} by ${this.author}  ${this.pages} pages ${this.isRead}`
+    }
 }
+
 
 function addBookToLibrary() {
-    const newBook = new Book(title, author, pages, isRead);
-    myLibrary.push(newBook);
+    let myNewBook = new Book("The Big Elephant", "Perry Lokko", 234)
+    myLibrary.push(myNewBook)
+    console.log(myLibrary)
+
 }
+addBookToLibrary()
 
 
+
+
+
+function display() {
+    for (let i = 0; i < myLibrary.length; i++) {
+        if (myLibrary[i] === "The Hobbit") {
+            pEl.innerHTML = myLibrary[i]
+        }
+    }
+}
+display()
+
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
