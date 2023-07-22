@@ -1,4 +1,6 @@
 let pEl = document.getElementById("p-el")
+let bookInputEl = document.getElementById("bookInput-el")
+let newBook1 = document.getElementById("newBook1")
 
 
 let myLibrary = ["The Hobbit", "The runAway Bride", "Beauty and the Beast"];
@@ -14,32 +16,31 @@ function Book(title, author, pages) {
 }
 
 
+
+
 function addBookToLibrary() {
-    let myNewBook = new Book("The Big Elephant", "Perry Lokko", 234)
-    myLibrary.push(myNewBook)
-    console.log(myLibrary)
+    myLibrary.push[bookInputEl.value]
+    pEl.innerHTML = bookInputEl.value = "";
 
 }
 addBookToLibrary()
 
 
 
-
-
-function display() {
+function displayBook() {
     for (let i = 0; i < myLibrary.length; i++) {
-        if (myLibrary[i] === "The Hobbit") {
-            pEl.innerHTML = myLibrary[i]
-        }
+        let myNewBook1 = new Book(myLibrary[i], "Jony Jones", 123)
+        console.log(myNewBook1.info())
+        newBook1.innerText = myNewBook1.info()
     }
+
 }
-display()
 
 
 function openForm() {
     document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() {
+}
+
+function closeForm() {
     document.getElementById("myForm").style.display = "none";
-  }
+}
