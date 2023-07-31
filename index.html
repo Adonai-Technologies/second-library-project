@@ -16,19 +16,18 @@
 
         <div id="input-title-el">
           <label for="btitle">Book :</label>
-          <input type="text" name="book-title" placeholder="enter book title"
-            required>
+          <input type="text" id="myBookTitle" value="Mickey mouse" required>
         </div>
 
         <div id="input-author-el">
           <label for="author">Author:</label>
-          <input type="text" name="author" placeholder="enter book author"
+          <input type="text"  placeholder="enter book author"
             required>
         </div>
 
         <div id="input-pages-el">
           <label for="pages">Pages :</label>
-          <input type="text" name="pages" placeholder="enter nunber of pages"
+          <input type="text"  placeholder="enter nunber of pages"
             required>
         </div>
 
@@ -43,7 +42,7 @@
 
       </form>
 
-      <button id="add-book-btn">Add A New Book</button>
+      <button id="add-book-btn" onclick="addBookToLibrary()">Add A New Book</button>
 
     </div>
 
@@ -60,7 +59,7 @@
         <td>Remove</td>
       </tr>
       <tr>
-        <td></td>
+        <td id="td-el1"></td>
         <td></td>
         <td></td>
       </tr>
